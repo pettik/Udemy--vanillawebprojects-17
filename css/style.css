@@ -1,94 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-	--white-color: #fff;
-	--black-color: #000;
+  --white-color: #fff;
+  --black-color: #000;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Raleway", sans-serif;
-	min-height: 100vh;
-	overflow-x: hidden;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #0095dd;;
+  font-family: 'Raleway', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0095dd;
 }
 
-h1{
-	font-size: 45px;
-	color: var(--white-color);
+h1 {
+  font-size: 45px;
+  color: var(--white-color);
 }
 
-p{
-	line-height: 1.5;
+p {
+  line-height: 1.5;
 }
 
-
-canvas{
-	background: #f0f0f0;
-	display:block;
-	border-radius: 5px;
+canvas {
+  background: #f0f0f0;
+  display: block;
+  border-radius: 5px;
 }
 
-
-.btn{
-	cursor:pointer;
-	border:0;
-	padding: 10px 20px;
-	background-color:var(--black-color);
-	color: var(--white-color);
-	border-radius: 5px;
+.btn {
+  cursor: pointer;
+  border: 0;
+  padding: 10px 20px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 5px;
 }
 
-.btn:focus{
-	outline: 0;
+.btn:focus {
+  outline: 0;
 }
 
-.btn:hover{
-	background: #222;
+.btn:hover {
+  background: #222;
 }
 
-.btn:active{
-	transform: scale(.98)
+.btn:active {
+  transform: scale(0.98);
 }
 
-.rules-btn{
-	position:absolute;
-	top:30px;
-	left: 30px;
+.rules-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
 
-.rules{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #333;;
-	color: var(--white-color);
+.rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: var(--white-color);
 
-	min-height: 100vh;
-	width: 400px;
-	padding: 20px;
-	line-height: 1.5;
-	transform: translateX(-400px);
-	transition: transform 1s ease-in-out;
+  min-height: 100vh;
+  width: 400px;
+  padding: 20px;
+  line-height: 1.5;
+  transform: translateX(-400px);
+  transition: transform 1s ease-in-out;
 }
 
 .rules.show {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
-
-.rules h2{
-	margin:1rem auto;
+.rules h2 {
+  margin: 1rem auto;
 }
-.rules .btn{
-	margin-top: 1rem;
+
+.rules .btn {
+  margin-top: 1rem;
 }

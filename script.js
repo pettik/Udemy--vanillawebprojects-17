@@ -55,7 +55,11 @@ for (let i = 0; i < brickRowCount; i++) {
   for (let j = 0; j < brickColumnCount; j++) {
     const x = i * (brickInfo.w + brickInfo.padding) + brickInfo.offsetX;
     const y = j * (brickInfo.h + brickInfo.padding) + brickInfo.offsetX;
-    bricks[i][j] = { x, y, ...brickInfo };
+    bricks[i][j] = {
+      x,
+      y,
+      ...brickInfo,
+    };
   }
 }
 
@@ -110,7 +114,6 @@ function draw() {
   drawPaddle();
   drawScore();
   drawBricks();
-
   moveBall();
 }
 
@@ -150,7 +153,6 @@ function moveBall() {
         ) {
           ball.dy *= -1;
           brick.visible = false;
-
           increaseScore();
         }
       }
@@ -161,9 +163,6 @@ function moveBall() {
   if (ball.y + ball.size > canvas.height) {
     showAllBricks();
     score = 0;
-
-    ball.dx = 4;
-    ball.dy = -4;
   }
 }
 
@@ -186,10 +185,8 @@ function showAllBricks() {
 // Update canvas drawing and animation
 function update() {
   movePaddle();
-
   // Draw everything
   draw();
-
   requestAnimationFrame(update);
 }
 

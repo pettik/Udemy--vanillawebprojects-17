@@ -23,7 +23,7 @@ Game where you control a paddle with the arrow keys to bounce a ball up to break
 </div>
 
 
-<!-- ## My solution preview
+ ## My solution preview
 
  <div style="text-align:center;display:flex; flex-direction:column;justify-content:center;" >
     <img style="margin-bottom:10px" src="./img/my-solution-preview.png" alt="My solution preview">
@@ -31,8 +31,8 @@ Game where you control a paddle with the arrow keys to bounce a ball up to break
 
 ## My solution features
 
-- custom UI/UX design
-- the rest is same as an original -->
+- if the user loses, they must start the game by pressing the ‘spacebar’ to continue
+- the rest is same as an original 
 
 # Author
 

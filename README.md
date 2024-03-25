@@ -34,7 +34,7 @@ Game where you control a paddle with the arrow keys to bounce a ball up to break
 - if the user loses, they must start the game by pressing the ‘spacebar’ to continue
 - the rest is same as an original 
 
-# 17th of 20 Vanilla Javascript project
+# 17th of 20 Vanilla Javascript projects
 
 | ID | Project | URL Link |
 |---|---|---|
